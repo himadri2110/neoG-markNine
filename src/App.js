@@ -5,7 +5,7 @@ var foodDictionary = {
   Indian: [
     ["Pani Puri", "5/5"],
     ["Pav Bhaji", "4/5"],
-    ["Dosa", "3.5/5"]
+    ["Dhosa", "3.5/5"]
   ],
   Chinese: [
     ["Noodles", "4.5/5"],
@@ -36,7 +36,7 @@ export default function App() {
           <span role="img" aria-label="noodles">
             🍜
           </span>{" "}
-          Food Recommendation App
+          Hey Foodie!
         </h1>
         <p>
           See a list of my favourite food items. Click a cuisine to get started.

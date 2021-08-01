@@ -1,30 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-.App {
-  font-family: sans-serif;
-  text-align: center;
-  max-width: 700px;
-  margin: auto;
-  font-family: "Roboto", sans-serif;
+:root {
+  --background: rgb(247, 221, 213);
+  --text: rgb(255, 92, 92);
+  --grey: rgb(235, 232, 228);
+  --border: rgb(46, 46, 46);
 }
 
 * {
   margin: 0;
   padding: 0;
-  background-color: rgb(247, 221, 213);
+  box-sizing: border-box;
+  background-color: var(--background);
 }
 
-main {
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
   margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
-  margin: 2rem 0;
   text-align: left;
-  color: rgb(255, 92, 92);
+  color: var(--text);
 }
 
-p {
+main {
+  margin: 1rem 2rem;
+}
+
+p.about {
   font-size: 0.9rem;
   margin: 1rem 0;
   text-align: left;
@@ -41,7 +57,7 @@ hr {
   margin-block-start: 0.5rem;
   margin-block-end: 0.5rem;
   overflow: hidden;
-  border: 0.01rem solid rgb(255, 92, 92);
+  border: 0.01rem solid var(--text);
   opacity: 0.4;
   border-style: inset;
 }
@@ -50,9 +66,9 @@ hr {
   margin: 0 1rem 1rem 0;
   padding: 0.5rem;
   font-size: 0.8rem;
-  border: 1px solid rgb(161, 161, 161);
+  border: 1px solid var(--border);
   border-radius: 0.2rem;
-  background-color: rgb(235, 232, 228);
+  background-color: var(--grey);
   cursor: pointer;
 }
 
@@ -68,13 +84,26 @@ hr {
   width: 250px;
   margin: 1rem 0;
   padding: 1rem;
-  background-color: rgb(235, 232, 228);
-  border: 1px solid rgb(255, 92, 92);
+  background-color: var(--grey);
+  border: 1px solid var(--text);
   border-radius: 0.2rem;
 }
 
 .rating {
-  background-color: rgb(235, 232, 228);
+  background-color: var(--grey);
   font-size: 0.8rem;
-  color: rgb(46, 46, 46);
+  color: var(--border);
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+footer a,
+.github a {
+  color: inherit;
 }

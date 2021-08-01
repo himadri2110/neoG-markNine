@@ -31,14 +31,25 @@ export default function App() {
 
   return (
     <div className="App">
-      <main>
+      <header>
         <h1>
           <span role="img" aria-label="noodles">
             🍜
           </span>{" "}
           Hey Foodie!
         </h1>
-        <p>
+        <p className="github">
+          <a
+            href="https://github.com/himadri2110/neoG-markNine"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            GitHub Repo
+          </a>
+        </p>
+      </header>
+      <main>
+        <p className="about">
           See a list of my favourite food items. Click a cuisine to get started.
         </p>
 
@@ -64,6 +75,16 @@ export default function App() {
           </ul>
         </div>
       </main>
+
+      <footer>
+        <a
+          href="https://himadrishah.tech/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Himadri Shah
+        </a>
+      </footer>
     </div>
   );
 }

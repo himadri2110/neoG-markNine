@@ -2,20 +2,20 @@ import "./styles.css";
 import { useState } from "react";
 
 var foodDictionary = {
-  Indian: [
-    ["Pani Puri", "5/5"],
-    ["Pav Bhaji", "4/5"],
-    ["Dhosa", "3.5/5"]
+  Starter: [
+    ["Aloo  Chat", "North India", "3.5/5"],
+    ["Bread Pakora", "South Asia", "4/5"],
+    ["Spring Role", "China", "4.5/5"]
   ],
-  Chinese: [
-    ["Noodles", "4.5/5"],
-    ["Manchurian", "4/5"],
-    ["Spring Rolls", "3/5"]
+  MainCourse: [
+    ["Biryani", "Persia", "4.5/5"],
+    ["Chole Bhature", "North India", "4/5"],
+    ["Undhiyu", "Gujarat", "5/5"]
   ],
-  Italian: [
-    ["Pasta", "5/5"],
-    ["Pizza", "4.5/5"],
-    ["Lasagna", "4/5"]
+  Dessert: [
+    ["Brownie", "US", "5/5"],
+    ["Pancakes", "Greece", "4.5/5"],
+    ["Chocolate Cheesecake", "Greece", "4/5"]
   ]
 };
 
@@ -50,7 +50,8 @@ export default function App() {
       </header>
       <main>
         <p className="about">
-          See a list of my favourite food items. Click a cuisine to get started.
+          See a list of various food items, their origin and rating. Choose a
+          type to get started.
         </p>
 
         <div className="genreList">
@@ -68,7 +69,9 @@ export default function App() {
                 <li>
                   {item[0]}
                   <br />
-                  <span className="rating">{item[1]}</span>
+                  <span className="origin">Origin: {item[1]}</span>
+                  <br />
+                  <span className="rating">Rating: {item[2]}</span>
                 </li>
               );
             })}

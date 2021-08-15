@@ -89,7 +89,8 @@ hr {
   border-radius: 0.2rem;
 }
 
-.rating {
+.rating,
+.origin {
   background-color: var(--grey);
   font-size: 0.8rem;
   color: var(--border);

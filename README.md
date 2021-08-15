@@ -2,7 +2,7 @@
 
 [neoG mark9]
 
-<a href="https://markeight-fruit.netlify.app/"><img src="https://github.com/himadri2110/portfolio/blob/main/img/foodie.png" /></a>
+<a href="https://marknine-food.netlify.app/"><img src="https://github.com/himadri2110/portfolio/blob/main/img/foodie.png" /></a>
 
 ## Features
 

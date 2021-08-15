@@ -5,7 +5,7 @@ var foodDictionary = {
   Starter: [
     ["Aloo  Chat", "North India", "3.5/5"],
     ["Bread Pakora", "South Asia", "4/5"],
-    ["Spring Role", "China", "4.5/5"]
+    ["Spring Rolls", "China", "4.5/5"]
   ],
   MainCourse: [
     ["Biryani", "Persia", "4.5/5"],

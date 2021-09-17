@@ -38,6 +38,8 @@ h1 {
 
 main {
   margin: 1rem;
+  display: grid;
+  place-items: center;
 }
 
 p.about {
@@ -52,7 +54,7 @@ p.about {
   align-items: flex-start;
 }
 
-hr {
+/* hr {
   display: block;
   margin-block-start: 0.5rem;
   margin-block-end: 0.5rem;
@@ -60,7 +62,7 @@ hr {
   border: 0.01rem solid var(--text);
   opacity: 0.4;
   border-style: inset;
-}
+} */
 
 .genreList span {
   margin: 0 1rem 1rem 0;

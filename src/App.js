@@ -22,10 +22,12 @@ var foodDictionary = {
 var foodList = Object.keys(foodDictionary);
 
 export default function App() {
-  var [output, setOutput] = useState("");
+  var subList = foodDictionary["Starter"];
+
+  var [output, setOutput] = useState(subList);
 
   function foodClickHandler(food) {
-    var subList = foodDictionary[food];
+    subList = foodDictionary[food];
     setOutput(subList);
   }
 

@@ -1,7 +1,7 @@
 import "./styles.css";
 import { useState } from "react";
 
-var foodDictionary = {
+const foodDictionary = {
   Starter: [
     ["Aloo  Chat", "North India", "3.5/5"],
     ["Bread Pakora", "South Asia", "4/5"],
@@ -19,17 +19,17 @@ var foodDictionary = {
   ]
 };
 
-var foodList = Object.keys(foodDictionary);
+const foodList = Object.keys(foodDictionary);
 
 export default function App() {
-  var subList = foodDictionary["Starter"];
+  let subList = foodDictionary["Starter"];
 
-  var [output, setOutput] = useState(subList);
+  const [output, setOutput] = useState(subList);
 
-  function foodClickHandler(food) {
+  const foodClickHandler = (food) => {
     subList = foodDictionary[food];
     setOutput(subList);
-  }
+  };
 
   return (
     <div className="App">
@@ -57,9 +57,9 @@ export default function App() {
         </p>
 
         <div className="genreList">
-          {foodList.map((food) => {
-            return <span onClick={() => foodClickHandler(food)}>{food}</span>;
-          })}
+          {foodList.map((food) => (
+            <span onClick={() => foodClickHandler(food)}>{food}</span>
+          ))}
         </div>
 
         <hr />
